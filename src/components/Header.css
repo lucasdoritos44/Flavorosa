@@ -1,0 +1,76 @@
+.header{
+background: rgba(0, 0, 0, 0.54);
+backdrop-filter: blur(8.8px);
+-webkit-backdrop-filter: blur(8.8px);
+clip-path: polygon(100% 0, 100% 75%, 0 100%, 0% 0%);
+
+height:12vh;
+display:flex;
+align-items: center;
+justify-content: space-between;
+color:silver;
+padding:1rem 3rem;
+}
+
+.logo{
+    color:#d75633;
+    font-size:42px;
+}
+.logo:hover{
+    cursor:pointer;
+}
+
+.header ul{
+    display:flex;
+    
+}
+
+.header ul li{
+    list-style:none;
+    margin-right:1.5rem;
+    
+}
+
+.header ul li a {
+    text-decoration: none;
+    list-style:none;
+    color:silver;
+    font-size:18px;
+    transition: 0.4s;
+}
+
+.header ul li a:hover{
+    color:white;
+}
+
+.book__table{
+    font-size:22px;
+    transition: 0.4s;
+}
+
+.book__table:hover{
+    color:white;
+    cursor:pointer
+}
+
+@media screen and (max-width:1200px){
+    .book__table{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .book__table{
+        font-size:16px;
+    }
+    .header ul li a {
+        font-size:16px;
+    }
+    .header ul li{
+        margin-right:1rem;
+    }
+    .logo{
+        font-size:28px;
+    }
+}
+

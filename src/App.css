@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@400;700&family=Quicksand:wght@300&display=swap');
+
+:root{
+  --color-1: #eb9875;
+  --main-font: 'Aref Ruqaa Ink', serif;
+  --second-font:'Quicksand', sans-serif;
+}
+
+html,body{
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: var(--second-font);
+  scroll-behavior:smooth;
+}
+
+.App{
+  position: relative;
+  width:100vw;
+  height:fit-content;
+  background-image: url('./assets/bg.jpg');
+  background-repeat: no-repeat; 
+  background-size: cover; 
+}
