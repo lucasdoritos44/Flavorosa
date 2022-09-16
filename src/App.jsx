@@ -15,6 +15,7 @@ function App() {
       {mobileMenu && <MobileHeader setMobileMenu={setMobileMenu} />}
       <Home />
       <About />
+      <Home />
     </div>
   )
 }

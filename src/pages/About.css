@@ -1,8 +1,122 @@
 .about{
     width:100vw;
-    height:110vh;
+    height:115vh;
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 10%);
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    display:flex;
+}
+
+
+.logo__f{
+    position: absolute;
+    left:55%;
+    top:60%;
+    transform: translate(-50%,-50%);
+    font-family: 'Libre Baskerville';
+    font-size: 1000px;
+    color:rgba(53, 53, 53, 0.25);
+    z-index:-1;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.about__text-wrapper, .about__history-wrapper{
+    height:100%;
+    width:80%;
+    padding:8rem 3rem;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:silver;
+    margin:auto;
+}
+
+.about__description h1, .about__history-description h1{
+    font-size:55px;
+    font-family: var(--main-font);
+    padding-bottom:1.5rem;
+    color: var(--color-1)
+}
+
+.about__description p, .about__history-description{
+    font-size:17px;
+    width:75%;
+    margin:0 auto;
+}
+
+.about__history-pic, .about__pic{
+    height:400px;
+}
+
+.about__history-pic img, .about__pic img{
+    width:100%;
+    height:100%;
+    object-fit: contain;
+}
+
+@media screen and (max-width:1200px){
+    .logo__f{
+        font-size: 700px;
+    }
+    .about__description h1, .about__history-description h1{
+        font-size:45px;
+        font-family: var(--main-font);
+        padding-bottom:1rem;
+        color: var(--color-1)
+    }
+}
+@media screen and (max-width:1000px){
+    .logo__f{
+        font-size: 600px;
+    }
+    .about{
+        display:flex;
+        flex-direction: column;
+        height:fit-content;
+    }
+    .about__text-wrapper, .about__history-wrapper{
+        height:100%;
+        width:100%;
+        padding:3rem 3rem;
+    }
+    .about__text-wrapper{
+        padding:7rem 3rem;
+    }
+    .about__description p, .about__history-description{
+        margin-bottom:3rem;
+    }
+    .about__history-description{
+        margin-top:2rem;
+    }
+   
+}
+@media screen and (max-width:600px){
+    .logo__f{
+        font-size: 450px;
+    }
+    .about__text-wrapper{
+        padding:10rem 3rem;
+    }
+    .about__history-wrapper{
+        padding:0rem;
+    }
+    .about__text-wrapper{
+        padding:7rem 0rem 0rem 0rem;
+    }
+}
+@media screen and (max-width:500px){
+    .logo__f{
+        font-size: 350px;
+    }
+    
 }

@@ -14,26 +14,27 @@ const MobileHeader = ({ setMobileMenu }) => {
   }, [menuClosed])
 
   const closeMenuHandler = () => {
-    setMenuClosed(true);
-  };
+    setMobileMenu(false)
+    setMenuClosed(true)
+  }
 
   return (
     <div className={`mobile__menu-wrapper ${menuClosed ? 'slide__out-animation' : ''}`}>
       <p className="logo__mobile">Flavorosa</p>
       <ul>
-        <li>
+        <li onClick={closeMenuHandler}>
           <a href="#home">Home</a>
         </li>
-        <li>
+        <li onClick={closeMenuHandler}>
           <a href="#about">About</a>
         </li>
-        <li>
+        <li onClick={closeMenuHandler}>
           <a href="#menu">Menu</a>
         </li>
-        <li>
+        <li onClick={closeMenuHandler}>
           <a href="#awards">Awards</a>
         </li>
-        <li>
+        <li onClick={closeMenuHandler}>
           <a href="#contact">Contact</a>
         </li>
       </ul>
@@ -45,7 +46,7 @@ const MobileHeader = ({ setMobileMenu }) => {
           top: "4%",
           right: "7%",
         }}
-        onClick={closeMenuHandler}
+        onClick={() => setMenuClosed(true)}
       />
       <p className="book__table__mobile">Book a Table</p>
     </div>

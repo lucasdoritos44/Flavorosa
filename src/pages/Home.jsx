@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import dish1 from "../assets/dish1.jpg";
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 const Home = () => {
   return (
@@ -8,6 +8,7 @@ const Home = () => {
       <div className="desc">
         <div>
           <p className="home__p">Chase the new flavour</p>
+
           <h1 className="home__h1">The key to fine dining</h1>
         </div>
         <p className="home__description">
@@ -16,6 +17,7 @@ const Home = () => {
           Autem, quia natus unde accusantium cumque culpa recusandae nemo.
         </p>
       </div>
+      <button type="button" className="home__button">Explore Menu</button>
     </section>
   );
 };
