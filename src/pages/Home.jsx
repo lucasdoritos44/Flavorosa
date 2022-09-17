@@ -3,6 +3,7 @@ import "./Home.css";
 import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 const Home = () => {
+
   return (
     <section className="home" id="home">
       <div className="desc">

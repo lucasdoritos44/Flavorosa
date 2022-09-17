@@ -4,6 +4,8 @@ import MobileHeader from './components/MobileHeader'
 import React, {useState} from 'react'
 import About from './pages/About'
 import Home from './pages/Home'
+import Menu from './pages/Menu'
+import MenuItem from './components/MenuItem'
 
 function App() {
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -15,7 +17,7 @@ function App() {
       {mobileMenu && <MobileHeader setMobileMenu={setMobileMenu} />}
       <Home />
       <About />
-      <Home />
+      <Menu />
     </div>
   )
 }
