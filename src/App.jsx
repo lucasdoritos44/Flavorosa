@@ -5,7 +5,8 @@ import React, {useState} from 'react'
 import About from './pages/About'
 import Home from './pages/Home'
 import Menu from './pages/Menu'
-import MenuItem from './components/MenuItem'
+import Awards from './pages/Awards'
+import Contact from './pages/Contact'
 
 function App() {
   const [mobileMenu, setMobileMenu] = useState(false)
@@ -18,6 +19,8 @@ function App() {
       <Home />
       <About />
       <Menu />
+      <Awards />
+      <Contact />
     </div>
   )
 }
