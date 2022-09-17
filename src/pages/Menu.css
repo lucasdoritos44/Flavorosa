@@ -154,7 +154,8 @@ backdrop-filter: blur(5.5px);
 @media screen and (max-width: 750px){
 
     .menu{
-        height:115vh;
+        height:fit-content;
+        padding-bottom: 2rem;
     }
 
     .menu__title p{
