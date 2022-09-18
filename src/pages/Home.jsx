@@ -1,9 +1,8 @@
 import React from "react";
 import "./Home.css";
-import RestaurantIcon from '@mui/icons-material/Restaurant';
+import RestaurantIcon from "@mui/icons-material/Restaurant";
 
 const Home = () => {
-
   return (
     <section className="home" id="home">
       <div className="desc">
@@ -18,7 +17,11 @@ const Home = () => {
           Autem, quia natus unde accusantium cumque culpa recusandae nemo.
         </p>
       </div>
-      <button type="button" className="home__button">Explore Menu</button>
+      <a href="#menu">
+        <button type="button" className="home__button">
+          Explore Menu
+        </button>
+      </a>
     </section>
   );
 };

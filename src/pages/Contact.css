@@ -3,4 +3,159 @@
     width:100vw;
     background-image: url('../assets/contact-pic.jpg');
     color:silver;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contact__text{
+    width:35%;
+    padding:2rem;
+    clip-path: polygon(80% 0, 100% 100%, 0 100%, 0% 0%);
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contact__text h3{
+    margin:2rem 0rem;
+    font-size:26px;
+    font-weight: 400;
+}
+
+.contact__text h4{
+    font-size:24px;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.contact__text h5{
+    font-size:20px;
+    font-weight: 400;
+}
+
+
+
+.contact p{
+    font-size: 30px;
+}
+
+.contact h1{
+    font-size:64px;
+    font-family: var(--main-font);
+    color:var(--color-1)
+}
+
+.contact__opening-hours{
+    color:rgb(216, 214, 214);
+    position: absolute;
+    bottom:20%;
+    right:15%;
+    
+}
+
+.contact__opening-hours h3{
+    font-size: 48px;
+    font-family: var(--main-font);
+    padding-bottom: 1.5rem;
+}
+
+.contact__opening-hours p{
+    margin-top: 1rem;
+    font-size:32px;
+}
+
+@media screen and (max-width:1600px){
+    .contact__text{
+        width:45%;
+    }
+    .contact p{
+        font-size: 26px;
+    }
+    
+    .contact h1{
+    font-size:58px;
+    }
+
+    
+    .contact__text h3{
+        margin:1.5rem 0rem;
+        font-size:24px;
+    }
+    
+    .contact__text h4{
+        font-size:22px;
+        margin-bottom: 1rem;
+    }
+    
+    .contact__text h5{
+        font-size:18px;
+    }
+}
+
+@media screen and (max-width:1400px){
+    .contact__text{
+        width:55%;
+    }
+    .contact p{
+        font-size: 22px;
+    }
+    
+    .contact h1{
+    font-size:50px;
+    }
+
+    
+    .contact__text h3{
+        margin:1rem 0rem;
+        font-size:22px;
+    }
+    
+    .contact__text h4{
+        font-size:20px;
+        margin-bottom: 0.8rem;
+    }
+    
+    .contact__text h5{
+        font-size:16px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .contact__text{
+        width:80%;
+    }
+    .contact__opening-hours{
+        color:rgb(216, 214, 214);
+        position: absolute;
+        bottom:20%;
+        right:50%;
+    }
+    .contact__opening-hours h3{
+        font-size: 40px;
+
+    }
+    
+    .contact__opening-hours p{
+        margin-top: 1rem;
+        font-size:26px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .contact__text{
+        width:100%;
+        text-align: center;
+    }
+    .contact__text{
+        clip-path: polygon(100% 0, 100% 100%, 0 100%, 0% 0%);
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .contact__opening-hours{
+        text-align: center;
+        color:rgb(216, 214, 214);
+        position: absolute;
+        bottom:0%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:100%;
+    }
 }
